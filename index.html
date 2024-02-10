@@ -756,13 +756,9 @@
     function sendPassword() {
         const inputMDP = document.getElementById('password')
         if (inputMDP.value === 'flavio123') {
-            alert('Bon code')
             const expirationDate = new Date();
             expirationDate.setTime(expirationDate.getTime() + 2 * 60 * 60 * 1000);
-
-
             document.cookie = `authenticated=true;expires=${expirationDate.toUTCString()};path=/;domain=${window.location.hostname}`;
-            alert(document.cookie);
             window.location.href = 'CTX.html';
         } else {
             alert('Mauvais code')
