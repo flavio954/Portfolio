@@ -8,6 +8,13 @@
     <link rel="icon" href="img/icon.png" />
 </head>
 <body class="bg-custom4">
+<div id="backButton" class="z-10 opacity-0 md:opacity-0 fixed bottom-0 right-20 transition-all ease-in-out delay-150 duration-300 w-11 h-11">
+    <button onclick="checkArticle()" class="text-white rounded-md p-2 bg-custom1 w-11 h-11 flex justify-center items-center hover:">
+        <svg class="w-5 h-5 text-white hover:w-6 hover:h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V1m0 0L1 5m4-4 4 4"/>
+        </svg>
+    </button>
+</div>
 <nav class="bg-transparent border-gray-200">
     <div class="max-w-full flex flex-wrap flex-row items-center mx-10 p-8 justify-between xl:space-x-[30%] 2xl:space-x-[46%]">
         <a href="#" class="flex items-center">
@@ -174,6 +181,35 @@
 
     if (!authenticated) {
         window.location.href = 'index.html';
+    }
+</script>
+<script>
+    var backButton = document.getElementById('backButton');
+    var minScrollToShowButton = 200; // Réglez cette valeur en fonction de votre préférence
+
+    window.onscroll = function() {
+        var currentScrollPosition = window.scrollY;
+
+        if (currentScrollPosition > minScrollToShowButton) {
+            backButton.classList.add('md:opacity-100');
+            backButton.classList.remove('md:opacity-0');
+            backButton.classList.remove('bottom-0');
+            backButton.classList.add('bottom-16');
+        } else {
+            backButton.classList.add('md:opacity-0');
+            backButton.classList.remove('md:opacity-100');
+            backButton.classList.remove('bottom-16');
+            backButton.classList.add('bottom-0');
+        }
+    };
+
+    function checkArticle() {
+        const nav = document.getElementsByTagName('nav');
+        nav[0].scrollIntoView({
+            behavior: 'smooth',
+            offsetTop: 20
+        });
+
     }
 </script>
 <style>
