@@ -8,12 +8,19 @@
     <link rel="icon" href="img/icon.png" />
 </head>
 <body class="bg-custom4 overflow-x-hidden absolute top-0 right-0 left-0">
+<div id="backButton" class="z-10 opacity-0 md:opacity-0 fixed bottom-0 right-20 transition-all ease-in-out delay-150 duration-300 w-11 h-11">
+    <button onclick="checkArticle()" class="text-white rounded-md p-2 bg-custom1 w-11 h-11 flex justify-center items-center hover:">
+        <svg class="w-5 h-5 text-white hover:w-6 hover:h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V1m0 0L1 5m4-4 4 4"/>
+        </svg>
+    </button>
+</div>
 <article class="h-max" id="header">
     <img src="img/fond.png" class="absolute z-0 invisible lg:visible w-[100%]">
     <div class="z-10 relative">
         <nav class="bg-transparent border-gray-200">
             <div class="max-w-full flex flex-wrap flex-row items-center mx-10 p-8 justify-between xl:space-x-[30%] 2xl:space-x-[46%]">
-                <a href="#" class="flex items-center">
+                <a href="index.html#" class="flex items-center">
                     <div class="w-10 h-10 rounded-full"><img class="rounded-full" src="img/icon.png" alt="icon"></div>
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden  focus:outline-none focus:ring-2  text-gray-400 hover:bg-gray-700 focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -25,22 +32,22 @@
                 <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                     <ul class="font-medium flex flex-col items-center p-4 md:p-0 mt-4 rounded-lg bg-custom4 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
                         <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-custom3 bg-custom1 rounded md:bg-transparent md:text-custom3 md:py-0 md:pl-0 md:pr-10 md:hover:text-custom1" aria-current="page">Accueil</a>
+                            <a href="index.html" class="block py-2 pl-3 pr-4 text-custom3 bg-custom1 rounded md:bg-transparent md:text-custom3 md:py-0 md:pl-0 md:pr-10 md:hover:text-custom1" aria-current="page">Accueil</a>
                         </li>
                         <li>
-                            <a href="#apropos" class="block py-2 pl-3 pr-4 text-custom3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-custom1 md:py-0 md:pl-0 md:pr-10">À propos</a>
+                            <a href="index.html#apropos" class="block py-2 pl-3 pr-4 text-custom3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-custom1 md:py-0 md:pl-0 md:pr-10">À propos</a>
                         </li>
                         <li>
-                            <a href="#experience" class="block py-2 pl-3 pr-4 text-custom3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-custom1 md:py-0 md:pl-0 md:pr-10">Expériences</a>
+                            <a href="index.html#experience" class="block py-2 pl-3 pr-4 text-custom3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-custom1 md:py-0 md:pl-0 md:pr-10">Expériences</a>
                         </li>
                         <li>
-                            <a href="#projets" class="block py-2 pl-3 pr-4 text-custom3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-custom1 md:py-0 md:pl-0 md:pr-10">Projets</a>
+                            <a href="index.html#projets" class="block py-2 pl-3 pr-4 text-custom3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-custom1 md:py-0 md:pl-0 md:pr-10">Projets</a>
                         </li>
                         <li>
-                            <a href="#competence" class="block py-2 pl-3 pr-4 text-custom3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-custom1 md:py-0 md:pl-0 md:pr-10 ">Compétences</a>
+                            <a href="index.html#competence" class="block py-2 pl-3 pr-4 text-custom3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-custom1 md:py-0 md:pl-0 md:pr-10 ">Compétences</a>
                         </li>
                         <li>
-                            <a href="#contact" class="md:font-bold block py-2 pl-3 pr-4 text-custom3 md:text-custom1 rounded hover:bg-gray-100 md:hover:bg-custom1 md:hover:text-white md:px-7 md:py-2 md:border-2 md:border-custom1 md:rounded-full flex flex-row">Contact <span class="hidden md:block ml-1">></span></a>
+                            <a href="index.html#contact" class="md:font-bold block py-2 pl-3 pr-4 text-custom3 md:text-custom1 rounded hover:bg-gray-100 md:hover:bg-custom1 md:hover:text-white md:px-7 md:py-2 md:border-2 md:border-custom1 md:rounded-full flex flex-row">Contact <span class="hidden md:block ml-1">></span></a>
                         </li>
                     </ul>
                 </div>
@@ -254,6 +261,29 @@
                 </div>
             </div>
         </div>
+        <div class="w-3/5">
+            <div class="mb-10 mt-20">
+                <h2 class="text-4xl text-white font-bold mb-1">L'évolution et l'avenir du Cloud Computing</h2>
+            </div>
+            <p class="text-custom3">Le cloud computing a connu une évolution remarquable au fil des années, passant d'une technologie émergente à un élément essentiel de l'infrastructure informatique moderne. Initialement conçu pour offrir un stockage et une puissance de calcul flexibles via Internet, le cloud a rapidement évolué pour englober une gamme étendue de services, y compris l'IA, l'analyse de données avancée et la gestion des ressources. Son avenir prometteur repose sur une expansion continue, avec l'émergence de nouveaux modèles tels que le cloud hybride et multi-cloud, offrant une plus grande agilité et résilience. Les prochaines avancées technologiques pourraient inclure une intégration plus étroite de l'IA pour l'automatisation des tâches, une sécurité renforcée grâce à la confidentialité homomorphique et une prise en charge accrue des applications décentralisées grâce à la technologie de la blockchain.</p>
+        </div>
+        <div class="flex justify-center py-24">
+            <div class="w-[40rem] h-1 bg-custom1"></div>
+        </div>
+        <div class="">
+            <div class="">
+                <h2 class="text-4xl text-white font-bold mb-1">Conclusion</h2>
+            </div>
+            <div class="flex flex-row items-center">
+                <div class="w-3/5">
+                    <p class="text-custom3">En conclusion, le cloud computing représente une évolution majeure dans le domaine des systèmes informatiques, offrant des avantages significatifs tels que la flexibilité, la scalabilité et l'accès à des technologies de pointe. Son adoption croissante par les entreprises témoigne de sa valeur en tant que solution efficace pour répondre aux besoins informatiques modernes. Cependant, pour que cette transition soit pleinement réalisée, il est impératif de résoudre les préoccupations en matière de sécurité, notamment en ce qui concerne le piratage et l'espionnage. En surmontant ces défis, le cloud computing pourrait devenir une norme incontournable pour les organisations de toutes tailles, offrant des économies de coûts substantielles et contribuant à une utilisation plus efficace des ressources informatiques, tout en respectant les impératifs environnementaux.</p>
+                </div>
+                <img class="w-[30rem]" src="img/veille/conclusion.png">
+            </div>
+        </div>
+        <div class="flex justify-center mt-24">
+            <a data-modal-target="project-modal" data-modal-toggle="project-modal" class="w-56 mt-5 block text-white bg-custom1 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" style="cursor: pointer;">Suivi de veille</a>
+        </div>
     </div>
 </article>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
@@ -274,6 +304,36 @@
                 darkMode: 'class',
             }
         }
+    }
+</script>
+<script>
+
+    var backButton = document.getElementById('backButton');
+    var minScrollToShowButton = 200; // Réglez cette valeur en fonction de votre préférence
+
+    window.onscroll = function() {
+        var currentScrollPosition = window.scrollY;
+
+        if (currentScrollPosition > minScrollToShowButton) {
+            backButton.classList.add('md:opacity-100');
+            backButton.classList.remove('md:opacity-0');
+            backButton.classList.remove('bottom-0');
+            backButton.classList.add('bottom-16');
+        } else {
+            backButton.classList.add('md:opacity-0');
+            backButton.classList.remove('md:opacity-100');
+            backButton.classList.remove('bottom-16');
+            backButton.classList.add('bottom-0');
+        }
+    };
+
+    function checkArticle() {
+        const nav = document.getElementsByTagName('nav');
+        nav[0].scrollIntoView({
+            behavior: 'smooth',
+            offsetTop: 20
+        });
+
     }
 </script>
 <style>
