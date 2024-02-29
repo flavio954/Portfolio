@@ -856,7 +856,7 @@
 <script>
     function sendPassword() {
         const inputMDP = document.getElementById('password')
-        if (inputMDP.value === 'flavio123') {
+        if (inputMDP.value === 'Lprs95440!') {
             const expirationDate = new Date();
             expirationDate.setTime(expirationDate.getTime() + 2 * 60 * 60 * 1000);
             document.cookie = `authenticated=true;expires=${expirationDate.toUTCString()};path=/;domain=${window.location.hostname}`;
